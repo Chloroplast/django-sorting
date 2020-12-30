@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting App</title>
+</head>
+<body>
+
+<h1>This app sorts things</h1>
+<p>There have been {{num_sorting_runs}} previous sorting runs</p>
+<form method="post">
+    {{form}}
+    {% csrf_token %}
+    <button type="submit">Sort</button>
+</form>
+</body>
+</html>
