@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Back to Main Page</a>
+<br>
+<ul>
+    {% for run in past_runs %}
+    <li>
+    Data Used: {{ run.data }}
+    <br>
+    Algorithm Used: {{ run.algorithm }}
+    <br>
+    Elapsed Time: {{ run.elapsed_time }}
+    </li>
+    <br>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -9,5 +9,3 @@ class BubbleSort(SortingAlgorithm):
                     tmp = data[j]
                     data[j] = data[i]
                     data[i] = tmp
-
-        print(data)

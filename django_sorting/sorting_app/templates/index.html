@@ -7,7 +7,7 @@
 <body>
 
 <h1>This app sorts things</h1>
-<p>There have been {{num_sorting_runs}} previous sorting runs</p>
+<p>There have been <a href="/history"> {{num_sorting_runs}} previous sorting runs</a></p>
 <form method="post">
     {{form}}
     {% csrf_token %}

@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from sorting_app.views import index
+from sorting_app.views import index, history
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index)
+    path('', index),
+    path('history', history)
 ]
