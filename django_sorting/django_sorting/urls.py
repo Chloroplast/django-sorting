@@ -20,6 +20,6 @@ from sorting_app.views import index, history
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('history', history)
+    path('', index, name="index"),
+    path('history', history, name="history")
 ]
