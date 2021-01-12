@@ -3,7 +3,7 @@ from django.shortcuts import render
 from timeit import default_timer
 
 from sorting_app.models import SortRun
-from sorting_app.sorting_algorithms.SortingAlgorithmFactory import SortingAlgortihmFactory
+from sorting_app.sorting_algorithms.SortingAlgorithmFactory import SortingAlgorithmFactory
 
 
 class SortForm(forms.ModelForm):
@@ -23,7 +23,7 @@ def index(request):
             if new_sort.algorithm != "Bubble":
                 new_sort.algorithm = "Python Default"
 
-            sorting_algorithm = SortingAlgortihmFactory.build(new_sort.algorithm)
+            sorting_algorithm = SortingAlgorithmFactory.build(new_sort.algorithm)
             data_to_sort = new_sort.data
 
             start_time = default_timer()
